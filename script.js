@@ -65,3 +65,32 @@ if (hero && window.matchMedia('(pointer:fine)').matches &&
     m.addEventListener('click', mark);
   });
 })();
+
+// ===== First Square: interactive recap showcase (click a thumb to feature it) =====
+(() => {
+  const main = document.getElementById('showcaseMain');
+  const media = document.getElementById('showcaseMedia');
+  const img = document.getElementById('showcaseImg');
+  const tag = document.getElementById('showcaseTag');
+  const title = document.getElementById('showcaseTitle');
+  const desc = document.getElementById('showcaseDesc');
+  const thumbs = document.querySelectorAll('.showcase-thumbs .thumb');
+  if (!main || !img || !thumbs.length) return;
+  thumbs.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      if (btn.classList.contains('is-active')) return;
+      thumbs.forEach((t) => t.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      main.classList.add('is-swapping');
+      setTimeout(() => {
+        img.src = btn.dataset.src;
+        img.alt = btn.dataset.alt || '';
+        tag.textContent = btn.dataset.tag;
+        title.textContent = btn.dataset.title;
+        desc.textContent = btn.dataset.desc;
+        if (media) media.classList.toggle('has-reel', btn.hasAttribute('data-reel'));
+        main.classList.remove('is-swapping');
+      }, 170);
+    });
+  });
+})();

@@ -315,11 +315,14 @@ em.soft{font-style:italic;color:var(--ink-soft)}
 .footer{background:#08080a;border-top:1px solid var(--line);text-align:center;padding:58px 22px 46px}
 .footer .logo-badge{margin:0 auto 20px}
 .footer-tag{font-family:var(--display);font-weight:600;letter-spacing:.02em;color:var(--ink-soft)}
+.footer-tag .sep{color:var(--ink-dim);font-weight:400;margin:0 5px}
 .footer-links{display:flex;flex-wrap:wrap;gap:14px 24px;justify-content:center;margin:24px 0}
 .footer-links a{font-family:var(--display);font-weight:600;color:var(--ink-soft);font-size:.95rem}
 .footer-links a:hover{color:var(--lime)}
-.foot-social{display:inline-flex;align-items:center;gap:8px;transition:color .2s ease}
-.foot-social svg{width:18px;height:18px;fill:currentColor;flex:none}
+.foot-social{display:inline-flex;align-items:center;gap:8px;line-height:1;transition:color .2s ease}
+.foot-social svg{width:18px;height:18px;fill:currentColor;flex:none;display:block}
+/* nudge icons to the text cap-height center (Teko has deep descender space) */
+.foot-social svg,.foot-social .foot-logo{position:relative;top:-1px}
 .foot-logo{display:inline-block;width:27px;height:17px;flex:none;background:currentColor;
   -webkit-mask:url("assets/commudle.png") center/contain no-repeat;
   mask:url("assets/commudle.png") center/contain no-repeat}

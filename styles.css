@@ -93,6 +93,9 @@ em.soft{font-style:italic;color:var(--ink-soft)}
 .btn-dark:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.35)}
 .btn.full{width:100%}
 .btn.lg{padding:17px 32px;font-size:1.05rem}
+/* optically center button icons to the Teko cap-height */
+.btn svg{position:relative;top:-1px}
+.btn.lg svg{top:-2px}
 
 /* ---------- layout ---------- */
 .section{max-width:var(--maxw);margin:0 auto;padding:var(--pad) 22px;position:relative}
@@ -115,7 +118,7 @@ em.soft{font-style:italic;color:var(--ink-soft)}
 .logo-badge:hover{border-color:var(--lime);transform:translateY(-1px)}
 .logo-badge img{height:30px}
 .nav-links{display:flex;gap:28px;margin-left:auto}
-.nav-links a{font-family:var(--display);font-weight:600;font-size:.95rem;color:var(--ink-soft);
+.nav-links a{font-family:var(--body);font-weight:600;font-size:.9rem;color:var(--ink-soft);
   position:relative;padding:4px 0;transition:color .2s ease}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;
   background:var(--lime);transition:width .22s ease}
@@ -127,8 +130,8 @@ em.soft{font-style:italic;color:var(--ink-soft)}
 .mobile-menu{display:none;flex-direction:column;background:var(--bg-2);
   border-bottom:1px solid var(--line);overflow:hidden;max-height:0;transition:max-height .3s ease}
 .mobile-menu.open{max-height:420px;padding:14px 22px 24px}
-.mobile-menu a{font-family:var(--display);font-weight:600;padding:12px 0;border-bottom:1px solid var(--line);color:var(--ink-soft)}
-.mobile-menu a.btn{margin-top:16px;color:#fff;border-bottom:0;padding:14px 26px}
+.mobile-menu a{font-family:var(--body);font-weight:600;padding:12px 0;border-bottom:1px solid var(--line);color:var(--ink-soft)}
+.mobile-menu a.btn{font-family:var(--display);margin-top:16px;color:#fff;border-bottom:0;padding:14px 26px}
 
 /* =========================================================
    HERO
@@ -480,7 +483,7 @@ em.soft{font-style:italic;color:var(--ink-soft)}
    ========================================================= */
 .logo-badge{background:transparent;border:0;padding:0;border-radius:0;box-shadow:none}
 .logo-badge:hover{background:transparent;border:0;box-shadow:none;transform:translateY(-1px) rotate(-2deg)}
-.logo-badge img{height:58px;width:auto}
+.logo-badge img{height:66px;width:auto}
 .footer .logo-badge img{height:68px}
 
 /* =========================================================

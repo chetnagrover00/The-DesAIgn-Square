@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Second Square · The डिज़AIन Square</title>
+<meta name="description" content="The Second Square — edition 02 of The डिज़AIन Square at Alienkind. A design handoff workshop, a squad coding challenge, AI agents with Neo4j, Dumb Charades and tote-bag painting." />
+<link rel="icon" href="assets/logo/logo-badge.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body id="top">
+
+<div class="backdrop"></div>
+<span class="glow g1"></span>
+<span class="glow g2"></span>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <a href="index.html" class="logo-badge" aria-label="The डिज़AIन Square home"><img src="assets/logo/logo-badge.png" alt="The डिज़AIन Square" /></a>
+  <nav class="nav-links">
+    <a href="index.html#what">The Idea</a>
+    <div class="nav-dd">
+      <button class="nav-dd-btn" type="button" aria-haspopup="true" aria-expanded="false">Squares
+        <svg class="nav-dd-caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="nav-dd-menu">
+        <a href="first-square.html">The First Square</a>
+        <a href="second-square.html" aria-current="page">The Second Square</a>
+      </div>
+    </div>
+    <a href="index.html#happens">How It Works</a>
+    <a href="index.html#story">The Founder</a>
+    <a href="index.html#partner">Partner with Us</a>
+  </nav>
+  <a href="https://chat.whatsapp.com/JCS8Ts7KACNHZBFlVH1ROe" target="_blank" rel="noopener" class="btn btn-magenta nav-cta"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.25-.13-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.13-.16.25-.64.8-.79.96-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42l-.48-.01c-.16 0-.43.06-.66.31-.23.25-.86.85-.86 2.07s.89 2.4 1.01 2.57c.13.16 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>Join the Community</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#what">The Idea</a>
+  <a href="first-square.html">The First Square</a>
+  <a href="second-square.html">The Second Square</a>
+  <a href="index.html#happens">How It Works</a>
+  <a href="index.html#story">The Founder</a>
+  <a href="index.html#partner">Partner with Us</a>
+  <a href="https://chat.whatsapp.com/JCS8Ts7KACNHZBFlVH1ROe" target="_blank" rel="noopener" class="btn btn-magenta">Join the Community</a>
+</div>
+
+<main>
+<!-- ============ EDITION HEADER ============ -->
+<section class="section edition-head">
+  <a class="back-link reveal" href="index.html#squares">← All Squares</a>
+  <p class="eyebrow reveal">Edition 02 · Alienkind, Delhi NCR</p>
+  <h1 class="reveal">The <span class="hl">Second</span> Square</h1>
+  <p class="sub reveal">A room full of designers, developers and AI engineers. Two squads, one challenge, AI agents, Design &amp; AI Dumb Charades, and tote bags that got a whole lot more colourful. Five hours of learning, building, creating and connecting, all at Alienkind.</p>
+</section>
+
+<!-- ============ RECAP SHOWCASE ============ -->
+<section class="section edition-recap">
+  <div class="recap-showcase reveal">
+    <div class="showcase-main" id="showcaseMain">
+      <div class="showcase-media has-reel" id="showcaseMedia">
+        <img id="showcaseImg" src="assets/sq2/sq2-cover.jpg" alt="The Second Square at Alienkind, 24 October 2026" loading="lazy" />
+        <a class="showcase-reel" href="https://www.instagram.com/p/DfJjzfev5_I/" target="_blank" rel="noopener" aria-label="Watch the reel on Instagram">
+          <span class="reel-btn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="reel-btn-label">Watch the reel on Instagram</span>
+        </a>
+      </div>
+      <div class="showcase-info">
+        <span class="tag" id="showcaseTag">The Second Square</span>
+        <h3 id="showcaseTitle">Everyone together at Alienkind</h3>
+        <p id="showcaseDesc">Our second edition, 24 October 2026. Five hours of building, playing and gupshup, here's the day, moment by moment, tap through the highlights.</p>
+      </div>
+    </div>
+    <div class="showcase-thumbs" role="tablist" aria-label="Second Square highlights">
+      <button class="thumb is-active" type="button" data-reel="1"
+        data-src="assets/sq2/sq2-cover.jpg" data-alt="The Second Square at Alienkind, 24 October 2026"
+        data-tag="The Second Square" data-title="Everyone together at Alienkind"
+        data-desc="Our second edition, 24 October 2026. Five hours of building, playing and gupshup, here's the day, moment by moment, tap through the highlights.">
+        <img src="assets/sq2/sq2-cover.jpg" alt="The Second Square cover" loading="lazy" />
+      </button>
+      <button class="thumb" type="button"
+        data-src="assets/sq2/sq2-handoff.jpg" data-alt="Design handoff workshop with Brahmjit Singh"
+        data-tag="Hands-on Workshop" data-title="A new way to hand off design"
+        data-desc="Brahmjit Singh on how Design, AI and GitHub come together in a brand-new handoff workflow, then two squads went head-to-head to build, refine and ship a feature, one winning squad.">
+        <img src="assets/sq2/sq2-handoff.jpg" alt="Design handoff workshop" loading="lazy" />
+      </button>
+      <button class="thumb" type="button"
+        data-src="assets/sq2/sq2-agents.jpg" data-alt="AI agents live demo with Neo4j"
+        data-tag="Hands-on Workshop" data-title="From assistants to agents"
+        data-desc="Ajay Singh Karayat's live demo, From AI Assistants to AI Agents with Neo4j, going well beyond the usual prompt-and-response.">
+        <img src="assets/sq2/sq2-agents.jpg" alt="AI agents with Neo4j" loading="lazy" />
+      </button>
+      <button class="thumb" type="button"
+        data-src="assets/sq2/sq2-charades.jpg" data-alt="Design and AI Dumb Charades"
+        data-tag="Games &amp; Gupshup" data-title="Where the laughter took over"
+        data-desc="Design &amp; AI Dumb Charades brought out everyone's acting skills, and some very questionable guessing.">
+        <img src="assets/sq2/sq2-charades.jpg" alt="Dumb Charades" loading="lazy" />
+      </button>
+      <button class="thumb" type="button"
+        data-src="assets/sq2/sq2-tote.jpg" data-alt="Tote-bag painting"
+        data-tag="Shared Experience" data-title="Then we picked up paintbrushes"
+        data-desc="Tote-bag painting let creativity take a completely different form, everyone left with something they made by hand.">
+        <img src="assets/sq2/sq2-tote.jpg" alt="Tote bag painting" loading="lazy" />
+      </button>
+      <button class="thumb" type="button"
+        data-src="assets/sq2/sq2-swags.jpg" data-alt="Swags: stickers, books and tees"
+        data-tag="Swags" data-title="Nobody went home empty-handed"
+        data-desc="Stickers, tees and copies of Principles of Building AI Agents, little things to remember the afternoon by.">
+        <img src="assets/sq2/sq2-swags.jpg" alt="Swags" loading="lazy" />
+      </button>
+      <button class="thumb" type="button"
+        data-src="assets/sq2/sq2-group.jpg" data-alt="The whole room at The Second Square"
+        data-tag="The Square" data-title="The whole room, in one frame"
+        data-desc="Designers, developers and AI engineers who walked in as strangers and left with new connections, and a few hand-painted totes.">
+        <img src="assets/sq2/sq2-group.jpg" alt="Group pictures" loading="lazy" />
+      </button>
+    </div>
+  </div>
+
+  <div class="recap-cta reveal">
+    <p class="recap-thanks">Technology partner <b>Neo4j</b> &nbsp;·&nbsp; Community partners <b>The Last Page</b> &amp; <b>OSEN</b></p>
+  </div>
+</section>
+
+<!-- ============ JOIN CTA ============ -->
+<section class="section edition-join">
+  <div class="edition-join-card reveal">
+    <p class="eyebrow">The next Square</p>
+    <h2>Come find <span class="hl">your people.</span></h2>
+    <p class="sub" style="margin-left:auto;margin-right:auto">An afternoon of building with AI, making things by hand and a whole lot of गपशप, and you leave with people who just get it. Join the community and you'll be first in the room next time.</p>
+    <div class="hero-cta">
+      <a href="https://chat.whatsapp.com/JCS8Ts7KACNHZBFlVH1ROe" target="_blank" rel="noopener" class="btn btn-magenta lg">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.25-.13-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.13-.16.25-.64.8-.79.96-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42l-.48-.01c-.16 0-.43.06-.66.31-.23.25-.86.85-.86 2.07s.89 2.4 1.01 2.57c.13.16 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+        Join the Community
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <a href="index.html" class="logo-badge"><img src="assets/logo/logo-badge.png" alt="The डिज़AIन Square" /></a>
+  <p class="footer-tag">Small squares. Real connections. <span class="sep">|</span> Delhi NCR</p>
+  <div class="footer-links">
+    <a class="foot-social" href="https://www.commudle.com/communities/the-desaign-square" target="_blank" rel="noopener">
+      <span class="foot-logo" role="img" aria-label="Commudle"></span> Commudle</a>
+    <a class="foot-social" href="https://www.linkedin.com/company/the-desaign-square" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56z"/></svg> LinkedIn</a>
+    <a class="foot-social" href="https://www.instagram.com/the_desaign_square/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.2"/></svg> Instagram</a>
+    <a class="foot-social" href="https://chat.whatsapp.com/JCS8Ts7KACNHZBFlVH1ROe" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.25-.13-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.13-.16.25-.64.8-.79.96-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42l-.48-.01c-.16 0-.43.06-.66.31-.23.25-.86.85-.86 2.07s.89 2.4 1.01 2.57c.13.16 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg> WhatsApp</a>
+  </div>
+  <p class="footer-copy">Made with a lot of गपशप with <span class="ai">AI</span> · © 2026 The डिज़AIन Square</p>
+</footer>
+
+<script src="script.js?v=2"></script>
+</body>
+</html>

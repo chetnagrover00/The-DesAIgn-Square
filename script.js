@@ -24,19 +24,6 @@ document.querySelectorAll('.reveal').forEach((el) => {
   io.observe(el);
 });
 
-// ===== Waitlist form (front-end only) =====
-const form = document.getElementById('waitForm');
-const note = document.getElementById('formNote');
-if (form && note) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const first = form.name.value.trim().split(' ')[0] || 'friend';
-    note.textContent = `You're on the list, ${first}! We'll be in touch before the next Square. ✦`;
-    form.reset();
-    setTimeout(() => { note.textContent = ''; }, 8000);
-  });
-}
-
 // ===== Subtle pointer parallax for hero accents (desktop only) =====
 const hero = document.querySelector('.hero');
 const movers = hero ? hero.querySelectorAll('.dia') : [];
@@ -92,5 +79,28 @@ if (hero && window.matchMedia('(pointer:fine)').matches &&
         main.classList.remove('is-swapping');
       }, 170);
     });
+  });
+})();
+
+// ===== Nav "Squares" dropdown — click to toggle (hover handled by CSS) =====
+(() => {
+  const dd = document.querySelector('.nav-dd');
+  if (!dd) return;
+  const btn = dd.querySelector('.nav-dd-btn');
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const open = dd.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  document.addEventListener('click', () => {
+    if (!dd.classList.contains('open')) return;
+    dd.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && dd.classList.contains('open')) {
+      dd.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
   });
 })();
